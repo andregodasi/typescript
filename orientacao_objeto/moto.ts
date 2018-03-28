@@ -6,4 +6,8 @@ export default class Moto extends Veiculo {
        super(modelo, velocidade)
     }
 
+    public acelerar(): void {
+        this.velocidade = this.velocidade + 20
+    }
+
 }
