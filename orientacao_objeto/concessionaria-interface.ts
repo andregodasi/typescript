@@ -1,0 +1,3 @@
+interface ConcessionariaInterface {
+    fornecerHorariosDeFuncionamento(): string;
+}
