@@ -2,27 +2,27 @@ import { DaoInterface } from "./dao-interface";
 import Pessoa from "./pessoa";
 import Carro from "./carro";
 
-export class PessoaDao implements DaoInterface {
+export class Dao<T> implements DaoInterface<T> {
     nomeTabela: string = ''
 
-    inserir(pessoa: Pessoa): boolean {
+    inserir(object: T): boolean {
         console.log('lógica inserir')
         return true
     }
-    atualizar(pessoa: Pessoa): boolean {
+    atualizar(object: T): boolean {
         console.log('lógica inserir')
         return true
     }
-    remover(id: number): Pessoa {
+    remover(id: number): T {
         console.log('lógica inserir')
-        return new Pessoa('', '', new Carro('',0 , 0))
+        return Object()
     }
-    selecionar(id: number): Pessoa {
+    selecionar(id: number): T {
         console.log('lógica inserir')
-        return new Pessoa('', '', new Carro('',0 , 0))
+        return Object()
     }
 
-    selecionarTodos(): Pessoa[] {
+    selecionarTodos(): T[] {
         console.log('lógica inserir')
         return []
     }
